@@ -9,16 +9,22 @@
 /* Begin PBXBuildFile section */
 		2DCF7A4E2B2600BD00E4FA85 /* SwiftUI_TabButtonsWithMaskingEffectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF7A4D2B2600BD00E4FA85 /* SwiftUI_TabButtonsWithMaskingEffectsApp.swift */; };
 		2DCF7A502B2600BD00E4FA85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF7A4F2B2600BD00E4FA85 /* ContentView.swift */; };
-		2DCF7A522B2600BD00E4FA85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DCF7A512B2600BD00E4FA85 /* Assets.xcassets */; };
 		2DCF7A552B2600BD00E4FA85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DCF7A542B2600BD00E4FA85 /* Preview Assets.xcassets */; };
+		2DCF7A5E2B26010000E4FA85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DCF7A5D2B26010000E4FA85 /* Assets.xcassets */; };
+		2DCF7A622B26013300E4FA85 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF7A612B26013300E4FA85 /* Tab.swift */; };
+		2DCF7A642B2601BB00E4FA85 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF7A632B2601BB00E4FA85 /* Home.swift */; };
+		2DCF7A682B26033100E4FA85 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCF7A672B26033100E4FA85 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2DCF7A4A2B2600BD00E4FA85 /* SwiftUI_TabButtonsWithMaskingEffects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_TabButtonsWithMaskingEffects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DCF7A4D2B2600BD00E4FA85 /* SwiftUI_TabButtonsWithMaskingEffectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_TabButtonsWithMaskingEffectsApp.swift; sourceTree = "<group>"; };
 		2DCF7A4F2B2600BD00E4FA85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2DCF7A512B2600BD00E4FA85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DCF7A542B2600BD00E4FA85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2DCF7A5D2B26010000E4FA85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DCF7A612B26013300E4FA85 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		2DCF7A632B2601BB00E4FA85 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		2DCF7A672B26033100E4FA85 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +57,12 @@
 		2DCF7A4C2B2600BD00E4FA85 /* SwiftUI_TabButtonsWithMaskingEffects */ = {
 			isa = PBXGroup;
 			children = (
+				2DCF7A652B26031100E4FA85 /* Helpers */,
+				2DCF7A602B26011B00E4FA85 /* View */,
+				2DCF7A5F2B26011500E4FA85 /* Model */,
 				2DCF7A4D2B2600BD00E4FA85 /* SwiftUI_TabButtonsWithMaskingEffectsApp.swift */,
 				2DCF7A4F2B2600BD00E4FA85 /* ContentView.swift */,
-				2DCF7A512B2600BD00E4FA85 /* Assets.xcassets */,
+				2DCF7A5D2B26010000E4FA85 /* Assets.xcassets */,
 				2DCF7A532B2600BD00E4FA85 /* Preview Content */,
 			);
 			path = SwiftUI_TabButtonsWithMaskingEffects;
@@ -65,6 +74,30 @@
 				2DCF7A542B2600BD00E4FA85 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2DCF7A5F2B26011500E4FA85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DCF7A612B26013300E4FA85 /* Tab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2DCF7A602B26011B00E4FA85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2DCF7A632B2601BB00E4FA85 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2DCF7A652B26031100E4FA85 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2DCF7A672B26033100E4FA85 /* Extensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +158,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DCF7A5E2B26010000E4FA85 /* Assets.xcassets in Resources */,
 				2DCF7A552B2600BD00E4FA85 /* Preview Assets.xcassets in Resources */,
-				2DCF7A522B2600BD00E4FA85 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DCF7A682B26033100E4FA85 /* Extensions.swift in Sources */,
+				2DCF7A622B26013300E4FA85 /* Tab.swift in Sources */,
 				2DCF7A502B2600BD00E4FA85 /* ContentView.swift in Sources */,
+				2DCF7A642B2601BB00E4FA85 /* Home.swift in Sources */,
 				2DCF7A4E2B2600BD00E4FA85 /* SwiftUI_TabButtonsWithMaskingEffectsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
